@@ -64,6 +64,7 @@ nav ul li {
 #composers {
     color: white;
     display: flex;
+    flex-wrap: wrap;
     background-color: black;
     flex-direction: column;
 }
