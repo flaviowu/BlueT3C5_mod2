@@ -7,6 +7,7 @@
 body {
     margin-left: 3rem;
     margin-right: 3rem;
+    font-size: large;
 }
 main {
     display: flex;
@@ -48,17 +49,30 @@ nav ul li {
     align-items: center;
 }
 
-.subsection {
-    padding: 5px;;
-    margin: 5px;
+.subSection {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    padding: 5px;
+    margin: 5px;
     align-items: center;
 }
 
+.wrapperUp {
+    max-width: auto;
+}
+
+#intro {
+    display: block;
+}
+
+#introPic {
+    display: flex;
+    align-content: center;
+}
+
 .wrapper {
-    margin-left: 15rem;
+    margin-left: 5rem;
+    margin-bottom: 10px;
     text-align: left;
 }
 
@@ -69,7 +83,6 @@ nav ul li {
 #composers {
     color: white;
     display: flex;
-    flex-wrap: wrap;
     flex-wrap: wrap;
     background-color: black;
     flex-direction: column;
