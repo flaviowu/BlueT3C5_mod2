@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto+Slab:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    color: wheat;
+    background-color: black;
+    text-align: center;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    display: flex;
+    margin: 10px;
+}
+
+.container {
+    padding: 10px;
+    background-image: linear-gradient(black, black, gray);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Merriweather', serif;
+}
+
+.textVideos {
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    color: wheat;
+    align-items: center;
+    border-radius: 10px;
+}
+.videos {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(10, 10, 10, 0.9);
+}
+
+#video1, #video2 {
+    color: wheat;
+    justify-content: center;
+}
