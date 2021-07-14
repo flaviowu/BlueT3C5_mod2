@@ -8,7 +8,9 @@ body {
     margin-left: 3rem;
     margin-right: 3rem;
 }
-
+main {
+    background-color: rgb(185, 160, 126);
+}
 nav {
     color: wheat;
     background-color: black;
@@ -84,7 +86,7 @@ nav ul li {
     padding: 1rem;
     margin: 1rem;
     width: 300px;
-    background-color:rgb(247, 207, 132);
+    background-color:rgb(185, 160, 126);
     border-radius: 10px;
 }
 
