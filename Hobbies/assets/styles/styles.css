@@ -3,6 +3,12 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
 nav {
     color: wheat;
     background-color: black;
@@ -21,36 +27,69 @@ nav ul li {
     margin: 10px;
 }
 
-.container {
-    padding: 10px;
-    background-image: linear-gradient(black, black, gray);
+.mainContainer {
     display: flex;
-    text-align: center;
-    align-items: center;
+    margin: 15px;
+    display: flex;
     flex-direction: column;
-    font-family: 'Merriweather', serif;
 }
 
-.textVideos {
+.section {
     margin: 10px;
     padding: 5px;
-    width: 100%;
-    color: wheat;
-    align-items: center;
-    border-radius: 10px;
-}
-.videos {
     display: flex;
-    width: 90%;
+    flex-direction: row;
     align-items: center;
-    padding: 2rem;
-    justify-content: space-around;
-    flex-direction: column;
-    border-radius: 10px;
-    background-color: rgba(10, 10, 10, 0.9);
 }
 
-#video1, #video2 {
-    color: wheat;
-    justify-content: center;
+.subsection {
+    padding: 5px;;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wrapper {
+    margin-left: 15rem;
+    text-align: left;
+}
+
+.wrapper ul {
+    display: inline-block;
+}
+
+#composers {
+    color: white;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    margin: 1rem;
+    flex-direction: row;
+    justify-items: center;
+}
+
+.profilePic {
+    margin: 1rem;
+    color: white;
+    padding: 5px;
+}
+
+.profileText {
+    color: black;
+    padding: 1rem;
+    margin: 1rem;
+    width: 300px;
+    background-color:rgb(247, 207, 132);
+    border-radius: 10px;
+}
+
+footer {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
 }
