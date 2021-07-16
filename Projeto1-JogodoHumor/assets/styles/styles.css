@@ -25,24 +25,26 @@ section#conteudo {
     background-repeat:repeat-y;
     background-size:  auto;
     background-position:center;
+    display: flex;
     align-items: center;
     align-content:flex-start;
     border-radius: 15px;
-    margin: 2.5rem;
 }
 
 section#conteudo div#texto {
     display: flex;
+    width: 100%;
     background-color: rgba(250, 235, 215, 0.5);
     flex-direction: column;
     align-content: center;
-    padding-right: 18rem;
+    /* padding-right: 18rem; */
+    /* margin-right: 20rem;     */
     border-radius: 15px;
 }
 
 section#conteudo div#texto p {
     text-align: center;
-    width: 85%;
+    width: 75%;
     margin: 2rem;
 }
 
@@ -50,23 +52,19 @@ section#conteudo div#texto h1 {
     margin-top: 2rem;
 }
 
-section div#card {  
+section#conteudo div#card {  
     background-color: cadetblue;
-    padding: 1rem;
+    padding: 2rem;
     display:flex;
-    position: fixed;
-    top:5rem;
-    left: 58rem;
+    position:fixed;
+    top:10rem;
     width: 15rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     align-content: center;
     border-radius: 15px;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    margin:2rem
+    margin-left:75%;
 }
 
 section div#card p{
