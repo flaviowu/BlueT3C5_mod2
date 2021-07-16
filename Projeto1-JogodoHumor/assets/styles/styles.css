@@ -22,7 +22,7 @@ body {
 
 section#conteudo {
     background-image: url("../img/hokusai_daiNami.jpg");
-    background-repeat: no-repeat;
+    background-repeat:repeat-y;
     background-size:  auto;
     background-position:center;
     align-items: center;
