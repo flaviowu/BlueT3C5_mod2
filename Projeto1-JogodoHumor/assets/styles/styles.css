@@ -6,9 +6,10 @@
 
 body {
     background-image: url("../img/War_flag_of_the_Imperial_Japanese_Army.svg");
-    background-position: top;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Permanent Marker', cursive;
@@ -16,41 +17,50 @@ body {
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    border-radius: 10px;
-    width: 90%;
-    height: 90%;
-}
-
-.personagens {
     background-image: url("../img/hokusai_daiNami.jpg");
     background-repeat: no-repeat;
     background-size:  100%;
-    background-position: top;
-    flex-wrap: wrap;
-    padding: 20px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 15px;
+    position:static;
+    margin: 2rem;
+}
+
+.personagens {  
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     align-content: center;
-    border-radius: 10px;
-    margin: 2rem;
+    border-radius: 15px;
 }
 
 #p1 {
     background-color: cadetblue;
-    position: fixed;
+    position: relative;
+    top:auto;
+    width: 18rem;
+    bottom: auto;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 2rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
-    margin-left: 60rem;
-    margin-top: 
-    3rem;
-    border-radius: 10px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#p1:hover{
+    transform: scale(1.2);
+}
+
+#p1 p{
+    margin-top: 10px;
 }
 
 #m1 {
@@ -59,16 +69,39 @@ body {
 
 #b1 {
     border-radius: 10px;
-    height: 2rem;
+    height: 2.5rem;
+    width: 10rem;
     margin-top: 1rem;
+    box-shadow: none;
 }
 
-.historinha{
+/* #b1:hover{
+    transform: scale(1.2);
+} */
+
+/* #h-container {
+    overflow-y: scroll;
+} */
+
+.historinha {
+    background-color: rgba(245, 245, 220, 0.45);
     margin-left: 3rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-right: 20rem;
-    width: auto;
-    text-align: justify;
-    font-size: small;
+    margin-right: 3rem;
+    width: 60rem;
+    overflow-y: auto;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+#img1 {
+    margin-top: 0.5rem;
+    width: 85%;
+    border-radius: 15px;
+}
+
+#final {
+    color: blue;
 }
