@@ -3,105 +3,94 @@
 * {
     margin: 0;
 }
-
+html {
+    width: 100%;
+    height: 100%;
+}
 body {
     background-image: url("../img/War_flag_of_the_Imperial_Japanese_Army.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgb(255, 255, 255);
     text-align: center;
+    padding: 2rem;
+    size: 100%;
     font-family: 'Permanent Marker', cursive;
     color: black;
 }
 
-.container {
+section#conteudo {
     background-image: url("../img/hokusai_daiNami.jpg");
     background-repeat: no-repeat;
-    background-size:  100%;
-    background-position: center;
-    display: flex;
+    background-size:  auto;
+    background-position:center;
     align-items: center;
-    flex-direction: row;
+    align-content:flex-start;
     border-radius: 15px;
-    position:static;
+    margin: 2.5rem;
+}
+
+section#conteudo div#texto {
+    display: flex;
+    background-color: rgba(250, 235, 215, 0.5);
+    flex-direction: column;
+    align-content: center;
+    padding-right: 18rem;
+    border-radius: 15px;
+}
+
+section#conteudo div#texto p {
+    text-align: center;
+    width: 85%;
     margin: 2rem;
 }
 
-.personagens {  
+section#conteudo div#texto h1 {
+    margin-top: 2rem;
+}
+
+section div#card {  
+    background-color: cadetblue;
     padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display:flex;
+    position: fixed;
+    top:5rem;
+    left: 58rem;
+    width: 15rem;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     border-radius: 15px;
-}
-
-#p1 {
-    background-color: cadetblue;
-    position: relative;
-    top:auto;
-    width: 18rem;
-    bottom: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 2rem;
     padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin:2rem
 }
 
-#p1:hover{
-    transform: scale(1.2);
-}
-
-#p1 p{
-    margin-top: 10px;
-}
-
-#m1 {
-    text-align: center;
-}
-
-#b1 {
-    border-radius: 10px;
-    height: 2.5rem;
-    width: 10rem;
+section div#card p{
     margin-top: 1rem;
-    box-shadow: none;
 }
 
-/* #b1:hover{
-    transform: scale(1.2);
-} */
-
-/* #h-container {
-    overflow-y: scroll;
-} */
-
-.historinha {
-    background-color: rgba(245, 245, 220, 0.45);
-    margin-left: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-right: 3rem;
-    width: 60rem;
-    overflow-y: auto;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
+section div#card img{
+    width: 100%;
+    margin: 0.5rem;
 }
 
-#img1 {
-    margin-top: 0.5rem;
-    width: 85%;
+section div#card input#b1{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 7rem;
+    height: 2.5rem;
+    border: none;
     border-radius: 15px;
 }
 
-#final {
-    color: blue;
+section div#card input#b1:hover{
+ transform: scale(1.2);
 }
+
+section#conteudo div#texto p#lenda6 span#final {
+    color: blue;
+} 
