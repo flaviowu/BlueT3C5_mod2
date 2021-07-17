@@ -27,7 +27,7 @@ textAreaMsg.addEventListener("keyup", () => {
     }
 })
 
-btnEnviar.addEventListener("click", () => {
-    
-})
+btnEnviar.addEventListener('click', () => {
+    alert('Formulário enviado com sucesso!')
+ })
 
