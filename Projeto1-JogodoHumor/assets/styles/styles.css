@@ -15,7 +15,6 @@ body {
     background-attachment: fixed;
     text-align: center;
     padding: 2rem;
-    size: 100%;
     font-family: 'Permanent Marker', cursive;
     color: black;
 }
@@ -23,47 +22,51 @@ body {
 section#conteudo {
     background-image: url("../img/hokusai_daiNami.jpg");
     background-repeat:repeat-y;
-    background-size:  auto;
+    background-size: auto;
     background-position:center;
-    display: flex;
+    height: fit-content;
+    display: block;
     align-items: center;
     align-content:flex-start;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 section#conteudo div#texto {
-    display: flex;
-    width: 100%;
-    background-color: rgba(250, 235, 215, 0.5);
+    background-color: rgba(250, 235, 215, 0.75);
+    size: 75%;
+    height: 100%;
     flex-direction: column;
     align-content: center;
-    /* padding-right: 18rem; */
-    /* margin-right: 20rem;     */
-    border-radius: 15px;
+    border-radius: 10px;
+    padding-bottom: 4rem;
 }
 
 section#conteudo div#texto p {
     text-align: center;
-    width: 75%;
-    margin: 2rem;
+    width: inherit;
+    margin: 1rem 23rem 0rem 5rem;
+    
 }
 
 section#conteudo div#texto h1 {
     margin-top: 2rem;
+    padding-top: 3rem;
+    width: 75%;
+
 }
 
 section#conteudo div#card {  
-    background-color: cadetblue;
+    background-color: rgb(32, 90, 92);
     padding: 2rem;
     display:flex;
-    position:fixed;
-    top:10rem;
-    width: 15rem;
+    position: fixed;
+    top: 20vh;
+    width: 15vw;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-left:75%;
 }
 
@@ -79,10 +82,10 @@ section div#card img{
 section div#card input#b1{
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    width: 7rem;
+    width: 9rem;
     height: 2.5rem;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 section div#card input#b1:hover{
