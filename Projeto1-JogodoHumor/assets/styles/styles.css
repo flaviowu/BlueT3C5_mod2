@@ -52,7 +52,6 @@ section#conteudo div#texto h1 {
     margin-top: 2rem;
     padding-top: 3rem;
     width: 75%;
-
 }
 
 section#conteudo div#card {  
@@ -60,8 +59,9 @@ section#conteudo div#card {
     padding: 2rem;
     display:flex;
     position: fixed;
-    top: 20vh;
-    width: 15vw;
+    right: 5vw;
+    top: 10em;
+    width: 11em;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
