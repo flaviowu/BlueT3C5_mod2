@@ -22,7 +22,7 @@ body {
 section#conteudo {
     background-image: url("../img/hokusai_daiNami.jpg");
     background-repeat:repeat-y;
-    background-size: auto;
+    background-size: cover;
     background-position:center;
     height: fit-content;
     display: block;
@@ -32,7 +32,7 @@ section#conteudo {
 }
 
 section#conteudo div#texto {
-    background-color: rgba(250, 235, 215, 0.75);
+    background-color:rgba(255, 228, 196, 0.55);
     size: 75%;
     height: 100%;
     flex-direction: column;
@@ -55,13 +55,14 @@ section#conteudo div#texto h1 {
 }
 
 section#conteudo div#card {  
-    background-color: rgb(32, 90, 92);
+    /* background-color: rgba(32, 90, 92); */
+    background-color: #be0026;
     padding: 2rem;
     display:flex;
     position: fixed;
     right: 5vw;
     top: 10em;
-    width: 11em;
+    width: 12.5em;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -77,9 +78,11 @@ section div#card p{
 section div#card img{
     width: 100%;
     margin: 0.5rem;
+    border-radius: 10px;
 }
 
-section div#card input#b1{
+section div#card button#b1{
+    background-color: bisque;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     width: 9rem;
@@ -88,7 +91,7 @@ section div#card input#b1{
     border-radius: 10px;
 }
 
-section div#card input#b1:hover{
+section div#card button#b1:hover{
  transform: scale(1.2);
 }
 
