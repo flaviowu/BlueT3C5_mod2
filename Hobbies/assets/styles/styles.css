@@ -1,22 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto+Slab:wght@300;400;500&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    margin-left: 3rem;
-    margin-right: 3rem;
     font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
 }
-main {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(185, 160, 126);
-}
+
 nav {
-    color: wheat;
     background-color: black;
+    color: white;
     text-align: center;
 
 }
@@ -32,85 +26,72 @@ nav ul li {
     margin: 10px;
 }
 
-.mainContainer {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 15px;
+nav ul li a {
+    text-decoration: none;
+}
+
+header{
     display: flex;
     flex-direction: column;
+    padding: 3rem;
 }
 
-.section {
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
+header ul {
+    margin: 1rem 0 0 10rem;    
 }
 
-.subSection {
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-    margin: 5px;
-    align-items: center;
-}
 
-.wrapperUp {
-    max-width: auto;
-}
-
-#intro {
-    display: block;
-}
-
-#introPic {
-    display: flex;
-    align-content: center;
-}
-
-.wrapper {
-    margin-left: 5rem;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-.wrapper ul {
-    display: inline-block;
-}
-
-#composers {
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
+section div#composers {
     background-color: black;
-    flex-direction: column;
-}
-
-.profile {
+    color: antiquewhite;
     display: flex;
-    flex-wrap: wrap;
-    margin: 1rem;
+    padding: 3rem;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+section div#composers h2{
+    margin: 1rem 0 2.5rem 0;
+}
+
+section div#composers div.profile {
+    margin: 1.5rem 0 0 1.5rem;
+    display: flex;
     flex-direction: row;
-    justify-items: center;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
-.profilePic {
-    margin: 1rem;
-    color: white;
-    padding: 5px;
+section div#composers div.profile div.profilePic{
+    display: flex;
+    align-items: center;
 }
 
-.profileText {
-    color: black;
-    padding: 1rem;
-    margin: 1rem;
-    width: 300px;
-    background-color:rgb(185, 160, 126);
+section div#composers div.profile div.profilePic img{
+    margin: 0 1.5rem 0 1.5rem;
     border-radius: 10px;
+    width: 15rem;
 }
 
+section div#composers div.profile div.profileText {
+    background-color: antiquewhite;
+    margin: 0 1.5rem 0 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    color: black;
+    text-align: justify;
+    width: 28rem;
+}
+
+section div#composers div.profile div.videoWrapper {
+    display: flex;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+section div#composers div.profile div.videoWrapper iframe{
+    width: 30rem;
+}
 footer {
     background-color: black;
     color: rgba(255, 255, 255, 0.5);
