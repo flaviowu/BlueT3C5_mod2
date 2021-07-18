@@ -89,6 +89,7 @@ section div#card button#b1{
     height: 2.5rem;
     border: none;
     border-radius: 10px;
+    font-family:'Permanent Marker', cursive;
 }
 
 section div#card button#b1:hover{
