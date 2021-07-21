@@ -241,61 +241,61 @@ section#contato {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
- }
+}
  
- section#contato div#redes{
-    width: 100%;
- }
+section#contato div#redes{
+   width: 100%;
+}
  
- section#contato div#redes h3{
-    text-align: center;
-    font-size: 2.5rem; 
-    margin-bottom: 2rem; 
- }
+section#contato div#redes h3{
+   text-align: center;
+   font-size: 2.5rem; 
+   margin-bottom: 2rem; 
+}
  
- section#contato div#redes div#icons{
-    display: flex;
-    justify-content: center;
- }
+section#contato div#redes div#icons{
+   display: flex;
+   justify-content: center;
+}
  
- section#contato div#redes div#icons a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 4rem;
-    padding: 2rem;
+section#contato div#redes div#icons a{
+   text-decoration: none;
+   color: #000000;
+   font-size: 4rem;
+   padding: 2rem;
+   transition: all .4s ease-out;
+}
+ 
+section#contato div#redes div#icons a:hover{
+   color: #dd0000;
+}
+ 
+section#contato div#redes div#icons a i{
     transition: all .4s ease-out;
- }
+}
  
- section#contato div#redes div#icons a:hover{
-    color: #dd0000;
- }
+section#contato div#redes div#icons a i:hover{
+   transform: scale(1.2);
+}
  
- section#contato div#redes div#icons a i{
-    transition: all .4s ease-out;
- }
+section#contato div#form{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
  
- section#contato div#redes div#icons a i:hover{
-    transform: scale(1.2);
- }
+section#contato div#form h3{
+   width: 100%;
+   text-align: center;
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+}
  
- section#contato div#form{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
- }
- 
- section#contato div#form h3{
-    width: 100%;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
- }
- 
- section#contato div#form form{
-    width: 50%;
- }
- 
- section#contato div#form form input, textarea{
+section#contato div#form form{
+    width: 70%;
+}
+
+section#contato div#form form input, textarea{
     width: 100%;
     padding: .5rem;
     font-size: 1.2rem;
@@ -303,13 +303,18 @@ section#contato {
     margin-top: .5rem;
     margin-bottom: 1rem;
     outline: none;
- }
- 
- section#contato div#form form label{
-    font-size: 1.2rem;
- }
- 
- section#contato div#form form button{
+}
+
+section#contato div#form form label{
+    font-size: 1.2rem;  
+}
+
+section#contato div#form form p.warning{
+    color: red;
+    font-size: 15px;
+}
+
+section#contato div#form form button{
     border: 1px solid #000000;
     background-color: #fff;
     color: #000000;
@@ -322,11 +327,11 @@ section#contato {
     cursor: pointer;
     transition: .6s ease-out;
     width: 40%;
- }
- 
- section#contato div#form form button:hover{
+}
+
+section#contato div#form form button:hover{
     background-color: #dd0000;
     border: #dd0000;
     color: #fff;
     transform: scale(1.2);
- }
+}
