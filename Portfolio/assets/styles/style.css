@@ -43,12 +43,11 @@ nav ul li a {
 }
 
 header#inicio {
-    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
-    padding: 3rem 2rem 3rem 2rem;
+    margin: 3rem 0 0 0;
+    padding: 3rem 3rem 0 3rem;
 }
 
 header#inicio div {
@@ -100,7 +99,7 @@ section#sobreMim div img {
 }
 
 section#sobreMim div p {
-    font-size: 1.1vw;
+    font-size: 1.3vw;
     text-align: justify;
     margin-left: 5vw;
     color: #fff;
@@ -197,7 +196,7 @@ section#habilidades div {
 section#habilidades div span#python {
     background-color: #dd0000;
     color: #ffff;
-    text-align: end;
+    text-align: center;
     padding: .3rem;
     border-radius: 1rem;
     width: 65%;
@@ -206,7 +205,7 @@ section#habilidades div span#python {
 section#habilidades div span#java {
     background-color: #dd0000;
     color: #ffff;
-    text-align: end;
+    text-align: center;
     padding: .3rem;
     border-radius: 1rem;
     width: 60%;
@@ -215,7 +214,7 @@ section#habilidades div span#java {
 section#habilidades div span#mySQL {
     background-color: #dd0000;
     color: #ffff;
-    text-align: end;
+    text-align: center;
     padding: .3rem;
     border-radius: 1rem;
     width: 65%;
@@ -223,7 +222,7 @@ section#habilidades div span#mySQL {
 section#habilidades div span#html {
     background-color: #dd0000;
     color: #ffff;
-    text-align: end;
+    text-align: center;
     padding: .3rem;
     border-radius: 1rem;
     width: 46%;
@@ -231,7 +230,7 @@ section#habilidades div span#html {
 section#habilidades div span#css {
     background-color: #dd0000;
     color: #ffff;
-    text-align: end;
+    text-align: center;
     padding: .3rem;
     border-radius: 1rem;
     width: 35%;

@@ -37,9 +37,5 @@ textAreaMsg.addEventListener("keydown", () => {
 })
 
 btnEnviar.addEventListener('click', () => {
-    if (nomeFlag == true && emailFlag == true && textAreaFlag == true){
-        alert('E-mail enviado com sucesso')
-    }
-
-    
- })
+    (nomeFlag && emailFlag && textAreaFlag)? alert('E-mail enviado com sucesso') : alert('Verifique os dados e tente novamente')
+})
