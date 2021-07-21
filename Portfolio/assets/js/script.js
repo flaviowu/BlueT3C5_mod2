@@ -3,7 +3,7 @@ let inputEmail = document.querySelector("#email")
 let textAreaMsg = document.querySelector("#mensagem")
 let btnEnviar = document.querySelector("#enviar")
 
-inputNome.addEventListener("keyup", () => {
+inputNome.addEventListener("keydown", () => {
     if (inputNome.value.length < 3) {
         inputNome.style.borderColor = 'red'
     } else {
@@ -11,7 +11,7 @@ inputNome.addEventListener("keyup", () => {
     }
 })
 
-inputEmail.addEventListener("keyup", () => {
+inputEmail.addEventListener("keydown", () => {
     if (inputEmail.value.indexOf('@') == -1 || inputEmail.value.indexOf(".") == -1) {
         inputEmail.style.borderColor = 'red'
     } else {
@@ -19,7 +19,7 @@ inputEmail.addEventListener("keyup", () => {
     }
 })
 
-textAreaMsg.addEventListener("keyup", () => {
+textAreaMsg.addEventListener("keydown", () => {
     if (textAreaMsg.value.length > 100) {
         textAreaMsg.style.borderColor = 'red'
     } else {

@@ -12,10 +12,9 @@ html {
 }
 
 nav {
-    background-color: rgb(40, 180, 159);
-    /* margin-left: 2rem; */
-    padding: 2rem;
+    padding: 0;
     position: fixed;
+    top: 0;
     width: 100%;
 }
 
@@ -24,12 +23,13 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center; /*flex-start, flex-end */
-    padding: 1px;
-    border-radius: 10px;
+    padding: 1px 0 0 0;
 }
 
 nav ul li {
     padding: 1rem;
+    transition: .6s ease-in-out;
+    border-radius: .6rem;
 }
 
 nav ul li a {
@@ -37,34 +37,44 @@ nav ul li a {
     color: #fff;
 }
 
-header {
+nav ul li:hover {
+    background-color: #dd0000;
+    transform: scale(1.1);
+}
+
+header#inicio {
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    margin: 3rem;
+    padding: 3rem 2rem 3rem 2rem;
 }
 
-header div p{
+header#inicio div p{
+    width: 90%;
     display: flex;
     justify-content: center;
+    line-height: 3vw;
+    text-align:left;
     font-size: 2rem;
     font-weight: 300;
-    color: blue;
+    color: black;
 }
 
-header div#imgLamen {
-    display: flex;
-    justify-content: center;
-}
-
-header div span {
+header#inicio div span {
     font-size: 1vw;
     font-weight: 500;
-    color:  #0066ff;
+    margin: 5rem 0 0 0;
+    color:  #00000090;
 }
 
-header div img {
-    width: 60%;
+header#inicio div#img-selo {
+    margin: 2rem;
+}
+
+header#inicio div#img-selo img{
+    width: 20vw;
 }
 
 section#sobreMim {
@@ -72,11 +82,11 @@ section#sobreMim {
     justify-content: center;
     align-items: center;
     padding: 4rem;
-    background-color: #0066ff;
+    background-color: #000000;
 }
 
 section#sobreMim div img {
-    border-radius: 2vw;
+    border-radius: .5vw;
     text-align: justify;
     margin: 1.2vw;
     width: 90%;
@@ -85,14 +95,17 @@ section#sobreMim div img {
 section#sobreMim div p {
     font-size: 1.1vw;
     text-align: justify;
+    margin-left: 5vw;
     color: #fff;
     line-height:  2.5rem;
 }
 
 section#projetos {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    align-items:initial;
+    align-items: initial;
     padding: 3rem;
 }
 
@@ -102,11 +115,23 @@ section#projetos div img {
 }
 
 section#projetos div {
+    width: 20vw;
+    height: 50h;
+    border-radius: .5rem;
     text-align: center;
+    justify-content: space-between;
     padding: 1rem;
+    transition: .6s ease-in-out;
+}
+
+section#projetos div:hover {
+    background-color: #000000;
+    color: #fff;
+    transform: scale(1.1);
 }
 
 section#projetos div p{
+    margin: .5vw;
     text-align: justify;
 }
 
@@ -115,9 +140,9 @@ section#projetos div h2{
 }
 
 section#projetos div button {
-    border: 1px solid #0011aa;
-    background-color: rgb(255, 255, 0);
-    color: #3359ec;
+    border: 1px solid #000000;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
     margin: auto;
     padding: 1rem;
     font-size: .8vw;
@@ -129,23 +154,27 @@ section#projetos div button {
 }
 
 section#projetos div button:hover {
-    background-color: #0066ff;
-    color: black;
+    background-color: #dd0000;
+    color: rgb(255, 255, 255);
+    border-color: #dd0000;
     transform: scale(1.2);
 }
 
 section#habilidades {
+    background-color: #000000;
     padding: 3rem 10rem 3rem 10rem;
 
 }
 
 section#habilidades h2{
+    color: #fff;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
 section#habilidades p {
+    color: #fff;
     padding: 1rem;
     font-size: 1.3rem;
     font-weight: 600;
@@ -153,12 +182,30 @@ section#habilidades p {
 
 section#habilidades div {
     display: flex;
-    border: 1px solid #3359ec;
+    border: 1px solid #dd0000;
     border-radius: 1rem;
 }
 
 section#habilidades div span#python {
-    background-color: #3359ec;
+    background-color: #dd0000;
+    color: #ffff;
+    text-align: end;
+    padding: .3rem;
+    border-radius: 1rem;
+    width: 65%;
+}
+
+section#habilidades div span#java {
+    background-color: #dd0000;
+    color: #ffff;
+    text-align: end;
+    padding: .3rem;
+    border-radius: 1rem;
+    width: 60%;
+}
+
+section#habilidades div span#mySQL {
+    background-color: #dd0000;
     color: #ffff;
     text-align: end;
     padding: .3rem;
@@ -166,37 +213,37 @@ section#habilidades div span#python {
     width: 65%;
 }
 section#habilidades div span#html {
-    background-color: #3359ec;
+    background-color: #dd0000;
     color: #ffff;
     text-align: end;
     padding: .3rem;
     border-radius: 1rem;
-    width: 10%;
+    width: 46%;
 }
 section#habilidades div span#css {
-    background-color: #3359ec;
+    background-color: #dd0000;
     color: #ffff;
     text-align: end;
     padding: .3rem;
     border-radius: 1rem;
-    width: 5%;
+    width: 35%;
 }
 
 section#contato {
-    padding: 3rem 10rem 3rem 10rem; /* Sentido horario: Cima, direita , baixo, esquerda */
+    padding: 3rem 10rem 3rem 10rem;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Quebra o conteúdo para a próxima linha caso não haja mais espaço para esse conteúdo na tela */
+    flex-wrap: wrap;
  }
  
  section#contato div#redes{
-    width: 100%; /* Faz com que a div rede ocupe 100% do espaço na tela */
+    width: 100%;
  }
  
  section#contato div#redes h3{
-    text-align: center; /* Alinhamento centralizado do texto */
-    font-size: 2.5rem; /* Tamanho da fonte do elemento */
-    margin-bottom: 2rem; /* Margem para baixo do elemento */
+    text-align: center;
+    font-size: 2.5rem; 
+    margin-bottom: 2rem; 
  }
  
  section#contato div#redes div#icons{
@@ -205,23 +252,21 @@ section#contato {
  }
  
  section#contato div#redes div#icons a{
-    text-decoration: none; /* Tira o sublinhado e toda decoração de texto do link */
-    color: #0066ff;
+    text-decoration: none;
+    color: #000000;
     font-size: 4rem;
     padding: 2rem;
-    transition: all .4s ease-out; /*  Suavisa a transição de cores no hover */
+    transition: all .4s ease-out;
  }
  
- /* o :hover serve para quando passar o mouse por cima do elemento fazer algo */
  section#contato div#redes div#icons a:hover{
-    color: #71aaff;
+    color: #dd0000;
  }
  
  section#contato div#redes div#icons a i{
     transition: all .4s ease-out;
  }
  
- /* O atributo transform só muda um elemento que aparece efetivamente na tela, por isso colocamos ele na tag i, e não na tag a */
  section#contato div#redes div#icons a i:hover{
     transform: scale(1.2);
  }
@@ -243,7 +288,6 @@ section#contato {
     width: 50%;
  }
  
- /* A virgula serve para estilizar dois elementos ao mesmo tempo */
  section#contato div#form form input, textarea{
     width: 100%;
     padding: .5rem;
@@ -251,7 +295,7 @@ section#contato {
     border: 1px solid #ccc;
     margin-top: .5rem;
     margin-bottom: 1rem;
-    outline: none; /* Retira a borda do input quando clico dentro dele */
+    outline: none;
  }
  
  section#contato div#form form label{
@@ -259,9 +303,9 @@ section#contato {
  }
  
  section#contato div#form form button{
-    border: 1px solid #3359ec;
+    border: 1px solid #000000;
     background-color: #fff;
-    color: #3359ec;
+    color: #000000;
     padding: 1rem;
     font-size: .8vw;
     font-weight: 600;
@@ -274,7 +318,8 @@ section#contato {
  }
  
  section#contato div#form form button:hover{
-    background-color: #3359ec;
+    background-color: #dd0000;
+    border: #dd0000;
     color: #fff;
     transform: scale(1.2);
  }
