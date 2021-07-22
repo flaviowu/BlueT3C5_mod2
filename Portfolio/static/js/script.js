@@ -44,6 +44,3 @@ formChange.addEventListener("keydown", ()=> {
     (nomeFlag && emailFlag && textAreaFlag)? btnEnviar.disabled = false : btnEnviar.disabled = true
 })
 
-btnEnviar.addEventListener('click', () => {
-    alert('E-mail enviado com sucesso')
-})
