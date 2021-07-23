@@ -237,7 +237,7 @@ section#habilidades div span#css {
 }
 
 section#contato {
-    padding: 6rem 10rem 3rem 10rem;
+    padding: 1rem 0 2rem 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -250,7 +250,7 @@ section#contato div#redes{
 section#contato div#redes h3{
    text-align: center;
    font-size: 2.5rem; 
-   margin-bottom: 2rem; 
+   /* margin-bottom: 2rem;  */
 }
  
 section#contato div#redes div#icons{
@@ -288,7 +288,7 @@ section#contato div#form h3{
    width: 100%;
    text-align: center;
    font-size: 2.5rem;
-   margin-bottom: 2rem;
+   /* margin-bottom: 2rem; */
 }
  
 section#contato div#form form{
@@ -376,7 +376,7 @@ section#success div#card a{
     text-decoration: none;
     padding: 1rem;
     border: 1px solid #dd0000;
-    color: #000;
+    color: #fff;
     border-radius: .4rem;
     transition: all .4s ease-out;
 }

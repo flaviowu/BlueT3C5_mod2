@@ -33,14 +33,13 @@ textAreaMsg.addEventListener("keydown", () => {
     if (textAreaMsg.value.length > 100) {
         textAreaMsg.style.borderColor = 'red'
         textAreaFlag = false
-
     } else {
         textAreaMsg.style.borderColor = 'green'
         textAreaFlag = true
     }
 })
 
-formChange.addEventListener("keydown", ()=> {
-    (nomeFlag && emailFlag && textAreaFlag)? btnEnviar.disabled = false : btnEnviar.disabled = true
-})
+// formChange.addEventListener("submit", ()=> {
+//     (nomeFlag && emailFlag && textAreaFlag)? 
+// })
 
