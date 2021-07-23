@@ -47,13 +47,13 @@ header#inicio {
     justify-content: center;
     align-items: center;
     margin: 3rem 0 0 0;
-    padding: 3rem 3rem 0 3rem;
+    padding: 3rem 3rem 1rem 3rem;
 }
 
 header#inicio div {
     display: flex;
     flex-direction: column;
-    padding: 0 3rem 0 0;
+    padding: 0 0 0 5rem;
 }
 
 header#inicio div p {
@@ -237,7 +237,7 @@ section#habilidades div span#css {
 }
 
 section#contato {
-    padding: 3rem 10rem 3rem 10rem;
+    padding: 6rem 10rem 3rem 10rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -346,11 +346,11 @@ section#success{
 }
   
 section#success div#card{
-    background-color: rgb(166, 218, 166);
+    background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 4rem;
     border-radius: 2rem;
-    color: rgb(0, 88, 0);
+    color: rgb(255, 255, 255);
     width: 40%;
 }
   
@@ -375,54 +375,15 @@ section#success div#card p{
 section#success div#card a{
     text-decoration: none;
     padding: 1rem;
-    border: 1px solid rgb(0, 88, 0);
-    color:rgb(0, 88, 0);
+    border: 1px solid #dd0000;
+    color: #000;
     border-radius: .4rem;
     transition: all .4s ease-out;
 }
   
 section#success div#card a:hover{
-    background-color: rgb(0, 88, 0);
+    background-color: #dd0000;
     color: #fff;
 }
 
   /* Send Success */
-
-  /* Loader de carregamento */
-section#contato div#carregamento{
-    display: none; /* Deixa o display none para não aparecer até que você clique no botão enviar (ver JS) */
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-}
-  
-section#contato div#carregamento p{
-    color: #0066ff;
-    font-weight: 700;
-    font-size: 2rem;
-    width: 100%;
-    text-align: center;
-    padding: 2rem;
-}
-  
-section#contato div#carregamento div#loader{
-    border: 13px solid #fff;
-    border-radius: 50%;
-    border-top: 13px solid #0066ff;
-    border-bottom: 13px solid #0066ff;
-    width: 80px;
-    height: 80px;
-/* Anima o elemento div#loader criando a variável spin, em 2s de forma linear e infinita */
-    animation: spin 2s linear infinite;
-}
-  
-  /* Anima a variável spin do animation */
-@keyframes spin {
-    0% {  /* Começa em 0% */
-        transform: rotate(0deg); /* Rotação do elemento no 0° */ 
-    } 
-    100% { /* Vai até 100% */
-        transform: rotate(360deg); /* Rotação do elemento em 360° */ 
-  }
-}
-/* Loader de carregamento */

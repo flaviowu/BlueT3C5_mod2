@@ -26,6 +26,22 @@ class Contato:
 def index():
     return render_template('index.html')
 
+@app.route('/sobre')
+def sobre():
+    return render_template('sobre.html')
+
+@app.route('/projetos')
+def projetos():
+    return render_template('projetos.html')
+
+@app.route('/habilidades')
+def habilidades():
+    return render_template('habilidades.html')
+
+@app.route('/contato')
+def contato():
+    return render_template('contato.html')
+
 @app.route('/send', methods=['GET', 'POST'])
 def send():
     if request.method == 'POST':
